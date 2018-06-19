@@ -1,0 +1,42 @@
+﻿@model Fabryka4.Maszyny
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Maszyny</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nazwa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nazwa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data_ur)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data_ur)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hale.Nazwa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hale.Nazwa)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
